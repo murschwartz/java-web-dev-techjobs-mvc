@@ -19,6 +19,8 @@
     </tr>
     <tr>
 
+        <td><a th:href="@{/list/jobs(column=all,value=All)}">All Jobs</a></td>
+
         <td th:each="category : ${tableChoices}">
             <ul>
                 <li th:each="item : ${category.value}">
